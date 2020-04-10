@@ -4,7 +4,9 @@ var menuItem = {
   "contexts": ["selection"]
 };
 
-chrome.contextMenus.create(menuItem);
+chrome.runtime.onInstalled.addListener(function() {
+  chrome.contextMenus.create(menuItem);  
+})
 
 chrome.contextMenus.onClicked.addListener(function(clickData) {
   console.log(clickData);       // debug
