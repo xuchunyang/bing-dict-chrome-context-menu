@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Bing Dict Context Menu",
+  "description": "添加一个打开 Bing 词典的右键菜单",
+  "version": "1.0",
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
